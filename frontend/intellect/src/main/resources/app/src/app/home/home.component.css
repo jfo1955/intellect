@@ -1,0 +1,116 @@
+/* Conteneur principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* En-tête */
+.header {
+  background: linear-gradient(135deg, #5d3c8e, #007bff);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 18px;
+}
+
+/* Section principale avec les applications et le résumé */
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+/* Section des applications */
+.apps-section {
+  width: 70%;
+}
+
+.category {
+  margin-bottom: 30px;
+}
+
+.category h3 {
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.app img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.app span {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Section de résumé à droite */
+.summary-section {
+  width: 25%;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.selected-app h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.selected-app .free-info {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.continue-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.continue-btn:hover {
+  background-color: #007bff;;
+}
